@@ -1,0 +1,20 @@
+{
+  "name": "hobsons-cypress-challenge",
+  "version": "1.0.0",
+  "description": "Hobsons QA Engineer Cypress challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypress open",
+    "cypress:run": "npm run clean:report && cypress run --spec cypress/tests/e2e_tests/demo.spec.js --headed --reporter mochawesome",
+    "clean:report": "rimraf mochaawesome-report"
+  },
+  "author": "Kashif Shah",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.11.0",
+    "cypress-xpath": "^1.6.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "rimraf": "^2.6.2"
+  }
+}
